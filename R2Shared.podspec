@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source       = { :git => "http://EXAMPLE/R2Shared.git", :tag => "#{spec.version}" }
-  spec.source       = { :git => "git@github.com/muslin/R2Shared.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:IPJ1988/R2Shared.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "HTIR2Shared", "R2Shared" #"/**/*.{swift,h}"
+  spec.public_header_files = "HTIR2Shared/*.h", "R2Shared/*h"
+  # spec.source_files  = "R2Shared", "R2Shared/**/*.{h,m,swift}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
